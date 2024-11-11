@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    body{
+        margin: auto;
+        width: 50%;
+    }
+    table{
+        border-collapse:collapse;
+        width:100%;
+    }
+    th,td{
+        border: 1px solid rgb(19, 20, 19);
+        padding: 10px;
+        text-align:left ;
+    }
+    .frame {
+        position:relative;
+        right:-45%;
+    }
+.mg{
+    position: absolute;
+    left: 25%;
+    top: 55%;
+    max-width:100%;
+}
+.icon bar{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1111b8;
+            color: #260cbd;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: rgb(11, 23, 184);
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        nav {
+            background-color: #30c70a;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: rgb(47, 10, 180);
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #2615c0;
+            color: rgb(19, 185, 55);
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .hero {
+            background-color: #3c08c9;
+            text-align: center;
+            padding: 50px 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(14, 221, 14, 0.1);
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #13db2d;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .feature-box {
+            background-color: #1509bb;
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(14, 241, 44, 0.1);
+        }
+
+        .feature-box h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #0fc527;
+            color: rgb(10, 32, 153);
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .row{
+            display: flex;
+            margin-top: 20px;
+        }
+        .column{
+            flex: 50%;
+            padding: 10px;
+            height: 300px;
+        }
+  </style>
+<body>
+
+  <div class="container-md">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="mt-9 mb-8"><center>BELAJAR PROGRAM DI MICRODATA INDONESIA</center></h1>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://portalpublikasi.id/wp-content/uploads/2023/05/image-134.png"
+            alt="Los Angeles" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://portalpublikasi.id/wp-content/uploads/2023/05/image-134.png"
+            alt="Los Angeles" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://portalpublikasi.id/wp-content/uploads/2023/05/image-134.png"
+            alt="Los Angeles" class="d-block w-100">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi
+      repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga
+      praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius
+      earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt
+      quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque error
+      repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi expedita sint?</p>
+  </div>
+  <ol>
+    <li>html</li>
+    <li>css</li>
+    <li>javascript</li>
+    <li>php</li>
+  </ol>
+  <div class="container mt-3">
+    <h2>Bordered Table</h2>
+    <p>The .table-bordered class adds borders on all sides of the table and the cells:</p>
+    <table class="table table-dark table-striped-columns">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="row">
+        <div class="column">
+    <img  style="border-radius: 10px;" src="KMAU.jpg" width="100%" height="200px">
+<h2 style="text-align: center; margin-top: 10px;">MICRO DATA INDONESIA</h2>
+</div>
+<div class="column">
+    <video style="border-radius: 10px;" width="100%" height="200px" controls>
+        <source src="Gojek Mempersembahkan_ Cerdikiawan.mp4" type="video/mp4">
+        </video>
+        <h2 style="text-align: center;margin-top: 10px;">MICRO DATA INDONESIA</h2>
+        </div>
+        </div>
+    <h2 style="text-align: center;">BERITA KAMI</h2>
+    </h2>
+    <P style="text-align: center;">Menampilkan berita terbaru seputar dunia pemograman</P>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+        <img src="https://images.pexels.com/photos/13985298/pexels-photo-13985298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="110" height="110">
+        <h3 style="text-align: center;">MICRO DATA</h3>
+        <p style="text-align: justify;">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique amet maxime consequatur voluptate pariatur, recusandae animi libero explicabo? Cupiditate itaque nesciunt aliquid delectus iure ullam nihil laudantium optio deserunt quod.
+        </p>
+        </div>
+        <div class="col order-5">
+          <img src="https://images.pexels.com/photos/13985298/pexels-photo-13985298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="110" height="110">
+          <h3 style="text-align: center;">MICRO DATA</h3>
+          <p style="text-align: justify;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae veniam maxime temporibus consequuntur voluptas non eligendi optio error dicta consequatur eveniet quos dolores repudiandae necessitatibus, commodi sapiente omnis pariatur sint!
+          </p>
+        </div>
+        <div class="col order-1">
+        <img src="https://images.pexels.com/photos/13985298/pexels-photo-13985298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="110" height="110">
+        <h3 style="text-align: center;">MICRODATA</h3>
+        <P style="text-align:justify;">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatem quas porro quidem quasi voluptatibus, quia aut blanditiis eos tenetur rem reprehenderit quibusdam dicta. Nisi similique aspernatur vero cum magnam.
+        </P>
+        </div>
+      </div>
+    </div>
+    </body>
+    <h3 style="text-align: center;">KONTAK KAMI</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.2180018139206!2d105.29336527401365!3d-5.383703253830229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40dac03d097843%3A0x6bb59f4ba9a84e8c!2sPT%20Microdata%20Indonesia%20%7C%20Software%20Developer%20%7C%20IT%20Consultant!5e0!3m2!1sid!2sid!4v1731056757757!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div style="text-align: center;">
+        <img src="https://media.licdn.com/dms/image/v2/C4D0BAQGqTS0Xp1czCQ/company-logo_200_200/company-logo_200_200/0/1657524125290?e=2147483647&v=beta&t=zjrC2iUaUC6p9tyQ_lDbcMDi56O8GikC8e78_gOU0EM" alt="gambar micro data indonesia" style="margin-top: 20px;">
+        <h3 style="text-align: center;"><u>jl. Endro Suratmin NO.53f, way Dadi,Kec</u></h3>
+        <h3 style="text-align: center;"><u>Sukarame, Kota Bandar Lampung</u></h3>
+        <h3 style="text-align: center;"><u>Lmpung 35131</u></h3>
+<!--div class="row"-->
+<div style="display: flex; justify-content: center;">
+    <img src="https://png.pngtree.com/png-clipart/20181003/ourmid/pngtree-whatsapp-social-media-icon-design-template-vector-whatsapp-logo-png-image_3654780.png" alt="gambar wastaap" width="45" style="margin-right: 5px;">
+    <h3>0831-7293-6395</h3>
+</div>
+<!--</div>-->
+</body>
+</html>
